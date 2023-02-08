@@ -1,0 +1,13 @@
+exercises  : 
+
+list the long version of all the files and directories, where the most recent will be in the last and the oldest file / dir on the top. → #ls -ltr
+
+show the number of lines in a demo.txt file → #wc -l demo.txt
+
+create a usage.txt file contain the manual page data for the date command → #man date > usage.txt
+
+display the number of files and directories inside a directory [ including the hidden ones and except the . and .. ] → #ls -A | wc - l
+
+display the last 10 modified files / directories and top 3 too  → #ls -t | head, #ls -t | head -3
+
+create a log file with timestamp for example : logData_01_02_2023.log → #touch logData_$(date +%d_%m_%Y).log or #touch  logData_$(date +%d_%m_%Y_%H_%M_%S)_.log
